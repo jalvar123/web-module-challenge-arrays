@@ -61,7 +61,7 @@ For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainb
 
 function addFlavor(arr, Flav){
     arr.unshift(Flav);
-    console.log(arr);
+    return console.log(arr);
 }
 
 addFlavor(originalFlavors, "Rainbow Sherbert")
@@ -78,7 +78,7 @@ For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", 
 
 function removeLastFlavor(originalFlavors){
     originalFlavors.pop();
-    console.log(originalFlavors);
+    return console.log(originalFlavors);
 }
 removeLastFlavor(originalFlavors);
 
@@ -92,7 +92,7 @@ Your function should accept:
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
 
 function getFlavorByIndex(flavors, i){
-    console.log(flavors[i]);
+    return console.log(flavors[i]);
 }
     getFlavorByIndex(originalFlavors, 2);
 /* Task 5: As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that flavor from the array. 
